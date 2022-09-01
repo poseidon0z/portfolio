@@ -1,0 +1,66 @@
+* {
+    color: #AAAAAA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    background-color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(rgba(25, 26, 34, 0.7), rgba(25, 26, 34, 0.7)), url(Images/Background.jpg);
+    background-size: 100% auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-name {
+    font-size: 2.2em;
+    padding-left: 1em;
+}
+
+nav {
+    display: flex;
+    font-size: 1.1em;
+    padding: 1em;
+    margin: 0.5em
+}
+
+.nav-btn {
+    background-color: #AAAAAA00;
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: #EEEEEE;
+    font-size: 1.1em;
+    padding: 0 1em 0 1em
+}
+
+.title-area {
+    flex-grow: 1;
+}
+
+.home-page-heading {
+    margin: 0;
+    position: relative;
+    text-align: center;
+    font-size: 15vh;
+    top: 25%;
+    height: 100%;
+}
+
+.background-credits {
+    position: absolute;
+    bottom: 0;
+    right: 2em;
+}
