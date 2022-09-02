@@ -6,7 +6,6 @@
 
 
 * {
-    color: #DDDDDD;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
 }
@@ -15,9 +14,12 @@ body {
     background-color: #121212;
     margin: 0;
     padding: 0;
+    color: #DDDDDD;
 }
 
-
+a {
+    color: #DDDDDD;
+}
 
 
 
@@ -174,4 +176,37 @@ footer table i {
     background-image: linear-gradient(rgba(25, 25, 25, 0.95),
             rgba(25, 25, 25, 0.95)), url("Images/WhoBackground.jpg");
     background-size: cover;
+}
+
+/* Education section specific shit */
+.education {
+    background-image: linear-gradient(rgba(25, 25, 25, 0.5),
+            rgba(25, 25, 25, 0.5)), url("Images/EducationBackground.jpg");
+    background-size: cover;
+    background-position: 0% 80%;
+}
+
+.card {
+    list-style: disc;
+    margin: 1em 0;
+    padding: 0.5em;
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 1.2em;
+}
+
+.card sup,
+h3 {
+    font-weight: 600;
+}
+
+.card h3,
+p {
+    margin: 0.5em;
+}
+
+.card p {
+    font-weight: 400;
 }
