@@ -198,7 +198,31 @@ p {
     margin: 0.5em;
 }
 
+.multi-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.skill {
+    display: flex;
+    flex-basis: 45%;
+    flex-direction: column;
+    border: 1px solid #FFFFFF;
+    background-color: #DDDDDD33;
+    border-radius: 1em;
+    margin: 0.5em;
+    text-align: center;
+}
+
+.skill ul {
+    position: relative;
+    margin: 0;
+    flex-grow: 1;
+    padding-left: 1em;
+    text-align: left;
+    font-weight: 400;
+}
 
 
 /* Who section specific shit */
@@ -230,29 +254,10 @@ p {
     backdrop-filter: blur(2px);
 }
 
-
-.programming-milestones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.pro-skill {
-    display: flex;
-    flex-basis: 45%;
-    flex-direction: column;
-    border: 1px solid #FFFFFF;
-    background-color: #DDDDDD33;
-    border-radius: 1em;
-    margin: 0.5em;
-    text-align: center;
-}
-
-.pro-skill ul {
-    position: relative;
-    margin: 0;
-    flex-grow: 1;
-    padding-left: 1em;
-    text-align: left;
-    font-weight: 400;
+/* Other skills specific stuff */
+.other-skills {
+    background-image: linear-gradient(rgba(25, 25, 25, 0.9),
+            rgba(25, 25, 25, 0.9)), url("Images/OtherBackground.png");
+    background-size: cover;
+    background-position: 0% 45%;
 }
