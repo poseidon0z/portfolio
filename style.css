@@ -31,10 +31,11 @@ a {
 .home-page {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 105vh;
     background-image: linear-gradient(rgba(25, 26, 34, 0.7), rgba(25, 26, 34, 0.7)), url(Images/Background.jpg);
     background-size: 100% auto;
     background-position: 0% 80%;
+    box-shadow: 0 0 10em 0.5em rgba(0, 0, 0, 1) inset;
 }
 
 header {
@@ -137,8 +138,8 @@ footer table i {
 /* Info sections */
 .info {
     position: relative;
-    height: 100vh;
-    box-shadow: 0 0 10em 0 rgba(0, 0, 0, 1) inset;
+    height: 105vh;
+    box-shadow: 0 0 10em 0.5em rgba(0, 0, 0, 1) inset;
 }
 
 .info-content-box {
@@ -272,4 +273,25 @@ p {
     background-image: linear-gradient(rgba(25, 25, 25, 0.9),
             rgba(25, 25, 25, 0.9)), url("Images/AchievementsBg.jpg");
     background-size: cover;
+}
+
+/* Project page specific stuff */
+.project-page-heading {
+    display: flex;
+    flex-direction: column;
+    height: 105vh;
+    background-image: linear-gradient(rgba(25, 26, 34, 0.9), rgba(25, 26, 34, 0.9)), url(Images/ProjectsBg7.jpg);
+    background-size: cover;
+    background-position: 0% 80%;
+    box-shadow: 0 0 10em 0.5em rgba(0, 0, 0, 1) inset;
+}
+
+.project-page {
+    display: flex;
+    flex-direction: column;
+    height: 105vh;
+    background-image: linear-gradient(rgba(25, 26, 34, 0.9), rgba(25, 26, 34, 0.9)), url(Images/ProjectsBg8.jpg);
+    background-size: cover;
+    background-position: 0% 80%;
+    box-shadow: 0 0 10em 0.5em rgba(0, 0, 0, 1) inset;
 }
