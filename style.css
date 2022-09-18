@@ -295,3 +295,12 @@ p {
     background-position: 0% 80%;
     box-shadow: 0 0 10em 0.5em rgba(0, 0, 0, 1) inset;
 }
+
+.project-image {
+    width: 12.5em;
+    height: 12.5em;
+}
+
+.proj-header {
+    text-align: center;
+}
