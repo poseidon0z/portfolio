@@ -1,12 +1,25 @@
-/* Item arrangement:
--> General Properties
--> Header Properties
--> Footer Properties
+/*
+Item arrangement:
+1. Common styling
+2. Header styling
+3. Footer styling
+4. Common opening section styling
+5. Info styling
+6. Home page specific styling
+7. Projects page specific styling
+8. About page specific styling
+9. Overrides
 */
 
 
+
+
+
+/* Common styling */
 * {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -21,21 +34,31 @@ a {
     color: #DDDDDD;
 }
 
-
-
-
-/* HEADER */
-
-.home-page {
-    display: flex;
-    flex-direction: column;
-    height: 105vh;
-    background-image: linear-gradient(rgba(25, 26, 34, 0.7), rgba(25, 26, 34, 0.7)), url(Images/Background.jpg);
-    background-size: 100% auto;
-    background-position: 0% 80%;
-    box-shadow: 0 0 10em 0.5em rgba(0, 0, 0, 1) inset;
+ul {
+    padding: 0 2em 1em 2em;
+    text-align: left;
 }
 
+li {
+    padding: 0.2em 0;
+}
+
+h2,
+h3,
+p {
+    padding: 0.5em;
+}
+
+.bg-credits {
+    text-align: right;
+    margin: 0.5em 2em 0.5em auto;
+}
+
+
+
+
+
+/* Header styling */
 header {
     width: 100%;
     display: flex;
@@ -43,12 +66,12 @@ header {
     align-items: center;
 }
 
-.my-name {
+.header-name {
     font-size: 2.2em;
     padding-left: 1em;
 }
 
-.my-name a {
+.header-name a {
     text-decoration: none;
 }
 
@@ -69,60 +92,23 @@ nav {
     padding: 0 1em 0 1em
 }
 
-.title-area {
-    flex-grow: 1;
-}
-
-.home-page-heading {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    font-size: 15vh;
-    top: 30%;
-    margin: 0;
-    font-weight: 600;
-}
-
-.background-credits {
-    position: absolute;
-    bottom: 0;
-    right: 1em;
-    padding: 0.5em;
-}
 
 
 
 
-
-
-
-
-/* Footer */
-
+/* Footer Styling */
 footer {
     background-color: #222222;
-    position: relative;
     display: flex;
-    width: 100%;
-    font-size: 1.5em;
+    justify-content: space-between;
     align-items: center;
-}
-
-footer table tbody {
-    align-items: center;
-    padding: 0.1em;
-}
-
-footer table i {
-    text-align: center;
-    font-size: 0.9em;
 }
 
 .contact-text {
     display: block;
     height: 100%;
     padding: 5px;
-    font-size: 0.5em;
+    font-size: 0.8em;
 }
 
 .footer-image {
@@ -133,102 +119,114 @@ footer table i {
 }
 
 
-/* Info sections */
+
+
+
+/*Common opening section styling*/
+.opening-section {
+    display: flex;
+    flex-direction: column;
+    height: 101vh;
+    box-shadow: 0 0 10em 0.5em rgba(0, 0, 0, 1) inset;
+}
+
+.page-title {
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.page-title h1 {
+    margin: auto;
+    font-size: 15vh;
+    font-weight: 600;
+}
+
+
+
+
+
+/* Info styling */
 .info {
-    position: relative;
-    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 101vh;
     box-shadow: 0 0 10em 0.5em rgba(0, 0, 0, 1) inset;
 }
 
 .info-content-box {
-    display: relative;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
     padding: 10px;
     border-radius: 1em;
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center;
     width: fit-content;
+    max-width: 50em;
     max-height: 90%;
     overflow-y: scroll;
+}
+
+.single-para-box {
+    max-width: 50em;
 }
 
 .info-header {
     font-size: 2em;
     font-weight: 500;
-    margin: 0.5em;
+    margin: 0.2em;
 }
 
-.info-content {
+.info-sub-header {
+    font-weight: 800;
+    margin: 0.2em;
+}
+
+.info-main-content {
     color: #EEEEEE;
     font-size: 2em;
     font-weight: 800;
 }
 
-
-.small-info-content {
+.info-detailed-content {
     font-weight: 400;
-    padding: 1em;
-    font-size: 1em;
-    text-align: center;
-}
-
-.info-list-elem {
-    list-style: disc;
-    margin: 1em 0;
     padding: 0.5em;
-    text-align: left;
-    font-weight: 400;
+    text-align: center;
+    font-style: italic;
 }
 
-.info-list-elem li {
-    margin: 0.6em;
-}
-
-.info-list-elem h3 {
-    font-size: 1.2em;
-}
-
-.info-list-elem sup,
-h3 {
-    font-weight: 600;
-}
-
-.info-list-elem h3,
-p {
-    margin: 0.5em;
-}
-
-.multi-list-container {
+.multi-item-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.skill {
-    display: flex;
-    flex-basis: 21em;
-    flex-direction: column;
-    border: 1px solid #FFFFFF;
-    background-color: #DDDDDD33;
-    border-radius: 1em;
-    margin: 0.5em;
-    text-align: center;
-}
-
-.skill ul {
-    position: relative;
-    margin: 0;
-    flex-grow: 1;
-    padding-left: 1em;
+.multi-item-elem {
     text-align: left;
-    font-weight: 400;
+    min-width: 4em;
+    margin: 1em 0;
+    padding: 0.2em;
+    flex-shrink: 0;
+}
+
+.thumbnail {
+    width: 12.5em;
+    height: 12.5em;
+    border-radius: 40%;
+    padding: 1em;
 }
 
 
-/* Who section specific shit */
+
+
+
+/*Home page specific styles*/
+.home-heading {
+    background-image: linear-gradient(rgba(25, 26, 34, 0.7), rgba(25, 26, 34, 0.7)), url(Images/Background.jpg);
+    background-size: 100% auto;
+    background-position: 0% 80%;
+}
+
 .who {
     background-image: linear-gradient(rgba(25, 25, 25, 0.8),
             rgba(25, 25, 25, 0.8)), url("Images/WhoBackground.jpg");
@@ -236,29 +234,59 @@ p {
 }
 
 
-/* Education section specific shit */
-.education {
-    background-image: linear-gradient(rgba(25, 25, 25, 0.5),
-            rgba(25, 25, 25, 0.5)), url("Images/EducationBackground.jpg");
+
+
+
+/*Projects page specific styles*/
+.projects-heading {
+    background-image: linear-gradient(rgba(25, 26, 34, 0.9), rgba(25, 26, 34, 0.9)), url(Images/ProjectsBg7.jpg);
+    background-size: cover;
+    background-position: 0% 80%;
+}
+
+.python-projects {
+    background-image: linear-gradient(rgba(25, 26, 34, 0.9), rgba(25, 26, 34, 0.9)), url(Images/ProjectsBg8.jpg);
     background-size: cover;
     background-position: 0% 80%;
 }
 
 
-/* Programming Skills Specific Stuff */
+
+
+
+/* About page specific styles */
+.skill {
+    width: 21em;
+    flex-direction: column;
+    border: 1px solid #FFFFFF;
+    background-color: #DDDDDD33;
+    border-radius: 1em;
+    margin: 0.5em;
+    text-align: center;
+    color: #EEEEEE;
+    font-weight: 300;
+}
+
+.about-heading {
+    background-image: linear-gradient(rgba(25, 25, 25, 0.8),
+            rgba(25, 25, 25, 0.8)), url("Images/Projectsbg6.jpg");
+    background-size: cover;
+    background-position: 0% 40%;
+}
+
+.education {
+    background-image: linear-gradient(rgba(25, 25, 25, 0.5),
+            rgba(25, 25, 25, 0.5)), url("Images/EducationBackground.jpg");
+    background-size: cover;
+    background-position: 69% 80%;
+}
+
 .programming-skills {
     background-image: linear-gradient(rgba(25, 25, 25, 0.8),
             rgba(25, 25, 25, 0.8)), url("Images/ProgrammingSkillsBg.jpg");
     background-size: cover;
 }
 
-.blur {
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(2px);
-}
-
-/* Other skills specific stuff */
 .other-skills {
     background-image: linear-gradient(rgba(25, 25, 25, 0.9),
             rgba(25, 25, 25, 0.9)), url("Images/OtherBackground.png");
@@ -266,44 +294,17 @@ p {
     background-position: 0% 45%;
 }
 
-/* Achievements specific stuff */
 .achievements {
     background-image: linear-gradient(rgba(25, 25, 25, 0.9),
             rgba(25, 25, 25, 0.9)), url("Images/AchievementsBg.jpg");
     background-size: cover;
 }
 
-/* Project page specific stuff */
-.project-page-heading {
-    display: flex;
-    flex-direction: column;
-    height: 105vh;
-    background-image: linear-gradient(rgba(25, 26, 34, 0.9), rgba(25, 26, 34, 0.9)), url(Images/ProjectsBg7.jpg);
-    background-size: cover;
-    background-position: 0% 80%;
-    box-shadow: 0 0 10em 0.5em rgba(0, 0, 0, 1) inset;
-}
 
-.project-page {
-    display: flex;
-    flex-direction: column;
-    height: 105vh;
-    background-image: linear-gradient(rgba(25, 26, 34, 0.9), rgba(25, 26, 34, 0.9)), url(Images/ProjectsBg8.jpg);
-    background-size: cover;
-    background-position: 0% 80%;
-    box-shadow: 0 0 10em 0.5em rgba(0, 0, 0, 1) inset;
-}
 
-.project-image {
-    width: 12.5em;
-    height: 12.5em;
-    border-radius: 40%;
-}
 
-.proj-header {
-    text-align: center;
-}
 
-.proj-description {
-    text-align: center;
+/* Overrides */
+.no-font-style {
+    font-style: normal;
 }

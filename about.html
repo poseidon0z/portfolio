@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Adi's Portfolio" />
+    <!-- Meta data --->
+    <meta name="description" content="About Adi" />
 
+    <!-- Google fonts stuff -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +11,10 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <!-- CSS --->
+    <link rel="stylesheet" href="style2.css" />
+
+    <!-- Fontawesome Icons -->
     <script
       src="https://kit.fontawesome.com/9d82ab87b3.js"
       crossorigin="anonymous"
@@ -21,31 +22,42 @@
 
     <title>Adi | About</title>
   </head>
+
   <body>
-    <header>
-      <div class="my-name"><a href="index.html">ADITYA PRABHU</a></div>
-      <nav>
-        <button type="button" class="nav-btn">
-          <a href="projects.html">Projects</a>
-        </button>
-        <button type="button" class="nav-btn">
-          <a href="about.html">About</a>
-        </button>
-      </nav>
-    </header>
+    <section class="opening-section about-heading">
+      <header>
+        <div class="header-name"><a href="index.html">ADITYA PRABHU</a></div>
+
+        <nav>
+          <button type="button" class="nav-btn">
+            <a href="projects.html">Projects</a>
+          </button>
+          <button type="button" class="nav-btn">
+            <a href="about.html">About</a>
+          </button>
+        </nav>
+      </header>
+
+      <div class="page-title">
+        <h1>About Me</h1>
+      </div>
+
+      <div class="bg-credits"><p>Photo by me</p></div>
+    </section>
+
     <section class="info education">
       <div class="info-content-box">
-        <div class="info-header">Education</div>
+        <h2 class="info-header">Education</h2>
         <ul>
-          <li class="info-list-elem">
+          <li class="multi-item-elem">
             <h3>School (KG to 10<sup>th</sup>)</h3>
             <p>The High Range School, Munnar</p>
           </li>
-          <li class="info-list-elem">
+          <li class="multi-item-elem">
             <h3>PUC (11<sup>th</sup> and 12<sup>th</sup>)</h3>
             <p>Deeksha Center For Learning, Bengaluru</p>
           </li>
-          <li class="info-list-elem">
+          <li class="multi-item-elem">
             <h3>UG</h3>
             <p>
               B.Tech in Computer Science and Engineering at VIT Chennai
@@ -54,7 +66,8 @@
           </li>
         </ul>
       </div>
-      <div class="background-credits">
+
+      <div class="bg-credits">
         <a href="https://unsplash.com/photos/u8m5JYqW0Zg"> Photo</a> by
         <a
           href="https://unsplash.com/@richasharma96?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
@@ -67,70 +80,71 @@
         >
       </div>
     </section>
+
     <section class="info programming-skills">
-      <div class="blur">
-        <div class="info-content-box">
-          <div class="info-header">Programming milestones</div>
-          <div class="multi-list-container">
-            <div class="info-list-elem skill">
-              <h3>Python</h3>
-              <ul>
-                <li>
-                  Created a moderation and automation bot for discord (inkBot)
-                  using discordpy, gaining experience with asynchronous
-                  programming.
-                </li>
-                <li>Aided in development of another discord bot, Cerberus</li>
-                <li>Made automation scripts using os and shutil modules.</li>
-                <li>Made an intereactive calculator with GUI built on pyQt.</li>
-              </ul>
-            </div>
-            <div class="info-list-elem skill">
-              <h3>Javascript</h3>
-              <ul>
-                <li>Used as tool to make webpages intereactive.</li>
-                <li>
-                  Worked with node.js, express and ejs to set up server based
-                  web application.
-                </li>
-                <li>
-                  Used node.js to make simple applications like a calculator.
-                </li>
-                <li>Made a simple browser based game.</li>
-              </ul>
-            </div>
-            <div class="info-list-elem skill">
-              <h3>HTML + CSS</h3>
-              <ul>
-                <li>
-                  Learnt HTML as part of school curriculum in computer science.
-                </li>
-                <li>Made a dummy university website to learn CSS.</li>
-                <li>
-                  Made a website for a band to practice making intereactive
-                  website using HTML, CSS and JavaScript.
-                </li>
-              </ul>
-            </div>
-            <div class="info-list-elem skill">
-              <h3>Miscellaneous</h3>
-              <ul>
-                <li>Have experience with using MongoDB as a database.</li>
-                <li>
-                  Successfully evaluated and debugged new modules (both coded by
-                  me and coded by peers) on a regular basis.
-                </li>
-              </ul>
-            </div>
+      <div class="info-content-box">
+        <h2 class="info-header">Programming Milestones</h2>
+        <div class="multi-item-container">
+          <div class="multi-item-elem skill">
+            <h3>Python</h3>
+            <ul>
+              <li>
+                Created a moderation and automation bot for discord (inkBot)
+                using discordpy, gaining experience with asynchronous
+                programming.
+              </li>
+              <li>Aided in development of another discord bot, Cerberus</li>
+              <li>Made automation scripts using os and shutil modules.</li>
+              <li>Made an intereactive calculator with GUI built on pyQt.</li>
+            </ul>
+          </div>
+          <div class="multi-item-elem skill">
+            <h3>Javascript</h3>
+            <ul>
+              <li>Used as tool to make webpages intereactive.</li>
+              <li>
+                Worked with node.js, express and ejs to set up server based web
+                application.
+              </li>
+              <li>
+                Used node.js to make simple applications like a calculator.
+              </li>
+              <li>Made a simple browser based game.</li>
+            </ul>
+          </div>
+          <div class="multi-item-elem skill">
+            <h3>HTML + CSS</h3>
+            <ul>
+              <li>
+                Learnt HTML as part of school curriculum in computer science.
+              </li>
+              <li>Made a dummy university website to learn CSS.</li>
+              <li>
+                Made a website for a band to practice making intereactive
+                website using HTML, CSS and JavaScript.
+              </li>
+            </ul>
+          </div>
+          <div class="info-list-elem skill">
+            <h3>Miscellaneous</h3>
+            <ul>
+              <li>Have experience with using MongoDB as a database.</li>
+              <li>
+                Successfully evaluated and debugged new modules (both coded by
+                me and coded by peers) on a regular basis.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="background-credits">Photo of inkBot source code by me</div>
+
+      <div class="bg-credits">Photo of inkBot source code by me</div>
     </section>
+
     <section class="info other-skills">
       <div class="info-content-box">
         <h2 class="info-header">Other Skills</h2>
-        <div class="multi-list-container">
+        <div class="multi-item-container">
           <div class="info-list-elem skill">
             <h3>3D Modelling on Blender</h3>
             <ul>
@@ -167,15 +181,17 @@
           </div>
         </div>
       </div>
-      <div class="background-credits">
+
+      <div class="bg-credits">
         Render of doughnut and coffee cup by me on blender
       </div>
     </section>
+
     <section class="info achievements">
       <div class="info-content-box">
-        <div class="info-header">Achievements</div>
+        <h2 class="info-header">Achievements</h2>
         <ul>
-          <li class="info-list-elem">
+          <li class="multi-item-elem">
             <h3>Ideate for India</h3>
             <p>
               Got selected as one of 10 students from Kerala for Ideate for
@@ -184,7 +200,7 @@
               Government of India and Intel India.
             </p>
           </li>
-          <li class="info-list-elem">
+          <li class="multi-item-elem">
             <h3>ASSET Talent Search</h3>
             <p>
               Qualified for ASSET summer camp as a result of performance in the
@@ -192,7 +208,7 @@
               Got recognition as ASSET Talent Schollar
             </p>
           </li>
-          <li class="info-list-elem">
+          <li class="multi-item-elem">
             <h3>Table Tennis</h3>
             <p>
               Got placed 3rd in CBSE clusters level table tennis<br />Qualified
@@ -201,7 +217,8 @@
           </li>
         </ul>
       </div>
-      <div class="background-credits">
+
+      <div class="bg-credits">
         <a href="https://unsplash.com/photos/HkN64BISuQA"> Photo</a> by
         <a
           href="https://unsplash.com/@arielbesagar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
@@ -214,6 +231,7 @@
         >
       </div>
     </section>
+
     <footer>
       <table>
         <tbody>
