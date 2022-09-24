@@ -24,8 +24,6 @@ a {
 
 
 
-
-
 /* HEADER */
 
 .home-page {
@@ -299,8 +297,13 @@ p {
 .project-image {
     width: 12.5em;
     height: 12.5em;
+    border-radius: 40%;
 }
 
 .proj-header {
+    text-align: center;
+}
+
+.proj-description {
     text-align: center;
 }
