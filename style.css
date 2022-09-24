@@ -202,7 +202,6 @@ footer {
 }
 
 .multi-item-elem {
-    text-align: left;
     min-width: 4em;
     margin: 1em 0;
     padding: 0.2em;
@@ -269,7 +268,7 @@ footer {
 
 .about-heading {
     background-image: linear-gradient(rgba(25, 25, 25, 0.8),
-            rgba(25, 25, 25, 0.8)), url("Images/Projectsbg6.jpg");
+            rgba(25, 25, 25, 0.8)), url("Images/Projectsbg6.png");
     background-size: cover;
     background-position: 0% 40%;
 }
