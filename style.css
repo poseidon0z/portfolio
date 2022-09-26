@@ -9,6 +9,7 @@ Item arrangement:
 7. Projects page specific styling
 8. About page specific styling
 9. Overrides
+10. Media Queries
 */
 
 
@@ -223,13 +224,15 @@ footer {
 .home-heading {
     background-image: linear-gradient(rgba(25, 26, 34, 0.7), rgba(25, 26, 34, 0.7)), url(Images/Background.jpg);
     background-size: 100% auto;
-    background-position: 0% 80%;
+    background-size: cover;
+    background-position: 20% 80%;
 }
 
 .who {
     background-image: linear-gradient(rgba(25, 25, 25, 0.8),
             rgba(25, 25, 25, 0.8)), url("Images/WhoBackground.jpg");
     background-size: cover;
+    background-position: 50% 0%;
 }
 
 
@@ -240,13 +243,13 @@ footer {
 .projects-heading {
     background-image: linear-gradient(rgba(25, 26, 34, 0.9), rgba(25, 26, 34, 0.9)), url(Images/ProjectsBg7.jpg);
     background-size: cover;
-    background-position: 0% 80%;
+    background-position: 20% 80%;
 }
 
 .python-projects {
     background-image: linear-gradient(rgba(25, 26, 34, 0.9), rgba(25, 26, 34, 0.9)), url(Images/ProjectsBg8.jpg);
     background-size: cover;
-    background-position: 0% 80%;
+    background-position: 20% 80%;
 }
 
 
@@ -268,16 +271,16 @@ footer {
 
 .about-heading {
     background-image: linear-gradient(rgba(25, 25, 25, 0.8),
-            rgba(25, 25, 25, 0.8)), url("Images/ProjectsBg6.jpg");
+            rgba(25, 25, 25, 0.8)), url("Images/aboutbg.jpg");
     background-size: cover;
-    background-position: 0% 40%;
+    background-position: 40% 40%;
 }
 
 .education {
     background-image: linear-gradient(rgba(25, 25, 25, 0.5),
             rgba(25, 25, 25, 0.5)), url("Images/EducationBackground.jpg");
     background-size: cover;
-    background-position: 69% 80%;
+    background-position: 50% 80%;
 }
 
 .programming-skills {
@@ -290,13 +293,14 @@ footer {
     background-image: linear-gradient(rgba(25, 25, 25, 0.9),
             rgba(25, 25, 25, 0.9)), url("Images/OtherBackground.png");
     background-size: cover;
-    background-position: 0% 45%;
+    background-position: 50% 45%;
 }
 
 .achievements {
     background-image: linear-gradient(rgba(25, 25, 25, 0.9),
             rgba(25, 25, 25, 0.9)), url("Images/AchievementsBg.jpg");
     background-size: cover;
+    background-position: 40% 0%;
 }
 
 
@@ -307,6 +311,9 @@ footer {
 .no-font-style {
     font-style: normal;
 }
+
+
+
 
 @media (max-width: 30rem) {
     body {
