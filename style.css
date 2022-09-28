@@ -55,6 +55,16 @@ p {
     margin: 0.5em 2em 0.5em auto;
 }
 
+.info-content-box::-webkit-scrollbar {
+    display: none;
+    /*Chrome, Safari and Opera */
+}
+
+.info-content-box {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
 
 
 
