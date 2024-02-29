@@ -212,6 +212,11 @@ footer {
     justify-content: space-around;
 }
 
+.multi-item-container a {
+    flex-basis: 30%;
+    min-width: 4em;
+}
+
 .multi-item-elem {
     min-width: 4em;
     margin: 1em 0;
@@ -222,6 +227,7 @@ footer {
 .thumbnail {
     width: 12.5em;
     height: 12.5em;
+    background-color: #DEDEDE;
     border-radius: 40%;
     padding: 1em;
 }
@@ -257,12 +263,16 @@ footer {
 }
 
 .python-projects {
-    background-image: linear-gradient(rgba(25, 26, 34, 0.9), rgba(25, 26, 34, 0.9)), url(Images/ProjectsBg8.jpg);
+    background-image: linear-gradient(rgba(25, 26, 34, 0.9), rgba(25, 26, 34, 0.9)), url(Images/ProjectsBg12.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.webdev-projects {
+    background-image: linear-gradient(rgba(25, 26, 34, 0.7), rgba(25, 26, 34, 0.7)), url(Images/ProjectsBg2.jpg);
     background-size: cover;
     background-position: 20% 80%;
 }
-
-
 
 
 
